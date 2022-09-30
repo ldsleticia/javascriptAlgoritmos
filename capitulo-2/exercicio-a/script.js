@@ -1,0 +1,9 @@
+function mostrarOla() {
+  let nome = document.getElementById("nome").value;
+  let resposta = (document.getElementById(
+    "resposta"
+  ).textContent = `Olá ${nome}`);
+}
+
+let mostrar = document.getElementById("mostrar");
+mostrar.onclick = mostrarOla;
