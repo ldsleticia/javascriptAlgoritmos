@@ -11,16 +11,26 @@
     <h1>Bem vindo a locadora Santos</h1>
     <form>
       <label for="inFilmName">Indique o nome do filme que irá assistir</label>
-      <input type="text" id="inFilmName" name="inFilmName" />
+      <input
+        type="text"
+        id="inFilmName"
+        name="inFilmName"
+        onfocus="this.value=''"
+      />
       <br />
       <br />
       <label for="inFilmDuration">Quantos minutos ele tem?</label>
-      <input type="text" id="inFilmDuration" name="inFilmDuration" />
+      <input
+        type="text"
+        id="inFilmDuration"
+        name="inFilmDuration"
+        onfocus="this.value=''"
+      />
       <br />
       <br />
       <input
         type="button"
-        onclick="enviar()"
+        onclick="send()"
         value="Converter minutos em horas"
       />
     </form>
